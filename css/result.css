@@ -1,0 +1,446 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+    /*transition: background-color .5s;*/
+    transition: background-color .5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f2f2f2;
+}
+
+button,
+button:active,
+button:focus,
+button:hover,
+.btn,
+.btn:active,
+.btn:focus,
+.btn:hover {
+    outline: none !important;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+a {
+    color: #706f6f;
+}
+
+a:hover {
+    color: #c1c1c1;
+}
+
+ :focus,
+a:focus {
+    outline: 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+
+/* top section css start */
+
+#top {
+    padding: 30px 0px;
+    background-color: #fff;
+}
+
+#headTitle {
+    background-color: #2db475;
+    padding: 30px 0px;
+}
+
+#headTitle h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0px
+}
+
+
+/* Product Search section start */
+
+#searchbox {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#searchbox .Searchbody {
+    background-color: #fff;
+    padding: 30px 0px;
+}
+
+.inputbox {
+    width: 420px;
+    display: block;
+    margin: 0 auto;
+}
+
+#searchbox .Searchbody .input-group-addon {
+    padding: 6px 12px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    color: #2db475;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    border-bottom: 1px solid #2db475;
+    border-left: 0px solid #2db475;
+}
+
+#searchbox .Searchbody .form-control {
+    display: block;
+    width: 100%;
+    height: 54px;
+    padding: 12px 16px;
+    font-size: 25px;
+    line-height: 1.42857143;
+    color: #4d4d4d;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    border-bottom: 1px solid #2db475;
+}
+
+#searchbox .Searchbody .inputbox .fa-search {
+    font-size: 25px;
+}
+
+
+/* Product details section start  */
+
+#products {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#products .leftbody,
+#products .rightbody {
+    float: left;
+}
+
+#products .leftbody::after,
+#products .rightbody::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#products .leftbody {
+    width: 68%;
+    margin-right: 20px;
+}
+
+#products .leftbody .leftBox1 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 70px;
+}
+
+#products .rightbody {
+    width: 30%;
+}
+
+#products .rightbody .box1 {
+    background-color: #fff;
+    padding: 42px 20px;
+}
+
+.rightbody .box1 P {
+    color: #fff;
+    padding: 8px 10px;
+    margin-bottom: 4px;
+}
+
+.rightbody .box1 P:nth-child(1) {
+    background-color: #3b3d96;
+}
+
+.rightbody .box1 P:nth-child(2) {
+    background-color: #524abe;
+}
+
+.rightbody .box1 P:nth-child(3) {
+    background-color: #786ed7;
+}
+
+.rightbody .box1 P span {
+    text-align: center;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.proImg {
+    width: 30%;
+    float: left;
+}
+
+.proImg img {
+    display: block;
+    margin: 0 auto;
+    width: 120px !important;
+}
+
+.produDetail table tr {
+    margin-bottom: 10px;
+}
+
+.produDetail table td.Pname,
+.produDetail table td.Pinfo {
+    font-size: 14px;
+}
+
+.produDetail table td.Pname {
+    width: 20%;
+    color: #cccccc;
+}
+
+.produDetail table td.Pinfo {
+    width: 80%;
+    padding-left: 20px;
+}
+
+#products .Pinfo .fa-star {
+    color: #faaf3a;
+    cursor: pointer;
+}
+
+#products .Pinfo .fa-star:hover {
+    color: #ff9f19;
+}
+
+#products .leftbody .leftBox2 {
+    display: -webkit-inline-box;
+}
+
+#products .leftbody .leftBox2 .noofkey {
+    background-color: #fff;
+    width: 48%;
+    padding: 20px;
+    margin-right: 30px;
+    position: relative;
+}
+
+#products .leftbody .leftBox2 .LQI {
+    background-color: #fff;
+    width: 48%;
+    padding: 20px;
+    position: relative;
+}
+
+#products .leftbody .leftBox2 .noofkey p {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #efefef;
+}
+
+#products .leftbody .leftBox2 .noofkey p::before {
+    content: "";
+    background-color: #7bcea9;
+    height: 2px;
+    width: 134px;
+    position: absolute;
+    top: 42px;
+}
+
+#products .leftbody .leftBox2 .LQI p {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #efefef;
+}
+
+#products .leftbody .leftBox2 .LQI p::before {
+    content: "";
+    background-color: #7bcea9;
+    height: 2px;
+    width: 31px;
+    position: absolute;
+    top: 42px;
+}
+
+#products .leftbody .leftBox2 .LQI .viewReport {
+    text-align: right;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+    color: #999999;
+}
+
+#products .rightbody .box2 {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#products .rightbody .box2 h1 {
+    font-size: 16px;
+    margin: 0px;
+    border-bottom: 2px solid #efefef;
+    position: relative;
+}
+
+#products .rightbody .box2 h1::before {
+    content: "";
+    background-color: #7bcea9;
+    height: 2px;
+    width: 67px;
+    position: absolute;
+    bottom: -2px;
+}
+
+#products .rightbody .box2 .AmazonReport p {
+    text-align: center;
+    margin-top: 19px;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    border-bottom: 0px;
+}
+
+#products .rightbody .box2 .AmazonReport .used,
+#products .rightbody .box2 .AmazonReport .New {
+    float: left;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#products .rightbody .box2 .AmazonReport .used {
+    border-right: 0px;
+}
+
+#products .rightbody .box2 .AmazonReport::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#products .rightbody .box3 {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#products .rightbody .box3 h1 {
+    font-size: 16px;
+    margin: 0px;
+    border-bottom: 2px solid #efefef;
+    position: relative;
+}
+
+#products .rightbody .box3 h1::before {
+    content: "";
+    background-color: #7bcea9;
+    height: 2px;
+    width: 104px;
+    position: absolute;
+    bottom: -2px;
+}
+
+#products .rightbody .box3 .noofBx {
+    border: 1px solid #565656;
+    margin-top: 30px;
+}
+
+#products .rightbody .box3 .tilsNoofBx {
+    background-color: #ddd;
+    padding: 10px 0;
+}
+
+#products .rightbody .box3 .tilsNoofBx h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0px;
+}
+
+#products .rightbody .box3 .fba,
+#products .rightbody .box3 .fbm {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#products .rightbody .box3 .noofBx::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#products .rightbody .box3 .fba h5,
+#products .rightbody .box3 .fbm h5 {
+    color: #21b573;
+    font-size: 18px;
+}
+
+#products .rightbody .box3 .fba h3,
+#products .rightbody .box3 .fbm h3 {
+    color: #615f5f;
+    font-size: 18px;
+}
+
+#products .rightbody .box3 .NoTextT {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#products .rightbody .box3 .ViwReport {
+    text-align: right;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+    color: #999999;
+}
+
+#products .leftbody .leftBox3 {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#products .leftbody .leftBox3 .salesRevenue p {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #efefef;
+}
